@@ -1,4 +1,4 @@
-# Analyzing-The-Sharing-Economy-with-Airbnb-Data-
+# Analyzing The Sharing Economy with Airbnb Data
 
 ## Project Overvies
 
