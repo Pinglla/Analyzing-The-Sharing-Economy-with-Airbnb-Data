@@ -1,5 +1,7 @@
 # Analyzing The Sharing Economy with Airbnb Data
 
+[Project PowerPoint](Analyzing_The_Sharing_Economy_with_Airbnb_Data.pdf)
+
 ## Project Overvies
 
 This project examines the impact of COVID-19 on the Airbnb market by analyzing key trends before and after the pandemic (2018–2019 vs. 2020–2021). While price increases are a well-documented effect, our goal was to identify other significant shifts driven by market uncertainty, changing traveler behavior, and the strategies adopted by both hosts and Airbnb to sustain their business. Specifically, we focused on changes in minimum night stay requirements across different locations and host types to understand how they adapted to the evolving landscape. Through data analysis, we explored how these adjustments varied and what they reveal about the transformation of the sharing economy in response to the pandemic.
