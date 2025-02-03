@@ -8,24 +8,40 @@ This project examines the impact of COVID-19 on the Airbnb market by analyzing k
 
 ## Data Source
 
-The dataset was provided by Professor Milan Miric, an Associate Professor of Data Science at USC. It comprises monthly Airbnb listing data for Los Angeles, spanning from March 2018 to January 2021.
+The dataset for this project was provided by Professor Milan Miric, an Associate Professor of Data Science at USC. It consists of monthly Airbnb listing data for Los Angeles, covering the period from March 2018 to January 2021. The dataset includes 1,603,477 records across 109 fields, offering detailed information on each listing, such as the property name, space, number of reviews, descriptions, minimum night stay, and more. 
 
+## Tools
+
+- Python – Used for data cleaning, analysis, and visualization.
+- PowerPoint – Used for creating reports and presenting findings.
 
 ## Data cleaning
 
-To ensure the credibility of our analysis, we used Python to clean the dataset by removing columns with missing values. Additionally, since our focus was on locations within Los Angeles, we filtered out listings from other areas to achieve a more accurate and relevant analysis.
+During the initial data preparation phase, we performed the following tasks:
+1. Handling Missing Values – Some records contained missing values, which could impact the accuracy of our analysis. We addressed these gaps to ensure data integrity.
+2. Filtering Data – Since our focus was on locations within Los Angeles, we filtered out listings from other areas to achieve a more accurate and relevant analysis.
 
 ## Exploratory Data Analysis
 
-Our analysis aims to address three key questions regarding the increase in minimum night stay requirements set by hosts:
+Our analysis focuses on three key questions related to the increase in minimum night stay requirements set by Airbnb hosts:
 
-- Does the trend of rising minimum night stays really persist over time?
-- Does geographical location influence this trend?
-- How does host size impact the changes in this trend?
+- Trend Analysis - Does the trend of rising minimum night stays really persist over time?
+- Geographical Influence – Does geographical location influence this trend?
+- Host Size Impact - How does host size impact the changes in this trend?
 
 ## Data Analysis
 
 We used Python for data analysis in this project, with the most interesting aspect being the use of Plotly’s geographic scatter plot to visualize changes over time across different locations. This analysis required extracting latitude and longitude data from the dataset, allowing us to effectively examine spatial trends and variations in minimum night stay requirements.
+
+```
+import plotly.express as px
+import pandas as pd
+
+fig = px.scatter_geo(data_merge_2018, lat='latitude', lon='longitude', color='minimum_nights',
+                     hover_name='neighbourhood', size='minimum_nights',
+                     title='2018 Mean minimum nights in LA', width=800, height=500)
+fig.show()
+```
 
 ## Findings
 
